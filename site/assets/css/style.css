@@ -1,5 +1,4 @@
-:root
-{
+:root {
     /* paleta de cores padrão */
     --cor-primaria: #103141;
     --cor-secundaria: #EBFF00;
@@ -10,82 +9,175 @@
     --fonte-texto: "Iceland", sans-serif;
     --fonte-equipe: "Inter", sans-serif;
 }
+
+.center {
+    margin: 0 48px;
+    width: calc(100% - 6rem);
+}
+
 /* Fonte e cor padrão do corpo */
-body 
-{
+body {
     font-family: var(--fonte-texto);
     color: var(--cor-secundaria);
     background-color: var(--cor-primaria);
     margin: 0;
     padding: 0;
 }
+
 /* Cabeçalhos e títulos */
-h1, h2, h3, h4 
-{
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--fonte-titulo);
     color: var(--cor-secundaria);
 }
 
 /* Logo */
-.logo a 
-{
+.logo a {
     display: flex;
     align-items: center;
     text-decoration: none;
     font-family: var(--font-title);
-    font-size: 1.8rem;
+    font-size: 5rem;
     color: var(--color-secundaria);
 }
-.logo-img 
-{
-    height: 40px;        /* ajuste conforme seu logo */
-    margin-right: 10px;  /* espaço entre a imagem e o texto */
+
+.logo-img {
+    height: 4rem;
+    width: 12rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 /*cabeçalho*/
-.site-header 
-{
-    background-color: var(--color-primaria); /*cor do fundo*/
-    padding: 15px 40px; /*espaçamento*/
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /*sombra*/
+.site-header {
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-primaria);
+    /*cor do fundo*/
+    padding: 1rem 0px;
+    /*espaçamento*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /*sombra*/
 }
-.site-header .container 
-{
-    display: flex; /*mantem as coisas alinhadas*/
-    justify-content: space-between; /* logo à esquerda, menu à direita */
-    align-items: center; /*deixs no centro */
+
+.site-header .container {
+    display: flex;
+    /*mantem as coisas alinhadas*/
+    justify-content: space-between;
+    /* logo à esquerda, menu à direita */
+    align-items: center;
+    /*deixs no centro */
+
 }
-.grupo-direita 
-{
+
+.grupo-direita {
     display: flex;
     align-items: center;
-    gap: 40px; /* espaço maior entre os links e a imagem */
+    gap: 40px;
+    /* espaço maior entre os links e a imagem */
 }
-.nav-links 
-{
+
+.nav-links {
     display: flex;
-    align-items: center;  /* alinha dentro do menu */
-    gap: 25px; /* espaço entre os links */
+    align-items: center;
+    /* alinha dentro do menu */
+    gap: 3rem;
+    /* espaço entre os links */
 }
-.nav-links a 
-{
+
+.nav-links a {
     color: var(--cor-secundaria);
-    text-decoration: none; /*tira o sublinhado de link*/
+    text-decoration: none;
+    /*tira o sublinhado de link*/
     font-family: var(--fonte-texto);
-    font-size: 1.2rem;
+    font-size: 1.75rem;
 }
+
 /*só o botão serviços, do cabeçalho*/
 .btn-servicos {
-    background-color: var(--cor-secundaria); /* cor do retângulo */
-    color: var(--cor-primaria) !important; /* cor do texto dentro */
-    padding: 8px 16px;  /* espaço interno */
-    border-radius: 8px;    /* bordas arredondadas */
-    text-decoration: none;  /* sem sublinhado */
+    background-color: var(--cor-secundaria);
+    /* cor do retângulo */
+    color: var(--cor-primaria) !important;
+    /* cor do texto dentro */
+    padding: 0.5rem 3rem;
+    /* espaço interno */
+    border-radius: 2rem;
+    /* bordas arredondadas */
+    text-decoration: none;
+    /* sem sublinhado */
 }
+
 /*icone menu lateral*/
-.lateral-icon
-{
+.lateral-icon {
     height: 40px;
     width: auto;
-    display: block;
+    display: none;
+}
+
+#side-menu {
+    display: none;
+}
+
+
+/* First section - banner principal */
+site-main {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.container-first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.container-first-section .textos-principais {
+    max-width: 644px;
+}
+
+.container-first-section .imagem {
+    width: 45%;
+}
+
+.container-first-section .textos-principais h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.container-first-section .textos-principais p {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.container-first-section .imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.informacoes {
+    display: flex;
+    gap: 6rem;
+}
+
+.informacoes p {
+    font-size: 28px;
+}
+
+.informacoes span {
+    color: white;
 }
