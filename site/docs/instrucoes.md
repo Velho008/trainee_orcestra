@@ -1,4 +1,5 @@
-meu-site/
+# Estrutura inicial do projeto trainee_orcestra
+site/
 │
 ├── index.html
 ├── second_page.html        # (possivel pagina secundaria)
