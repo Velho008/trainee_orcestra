@@ -1,0 +1,91 @@
+:root
+{
+    /* paleta de cores padrão */
+    --cor-primaria: #103141;
+    --cor-secundaria: #EBFF00;
+    --cor-forms: #BAC7CD;
+
+    /* fontes padrão */
+    --fonte-titulo: "Anton", sans-serif;
+    --fonte-texto: "Iceland", sans-serif;
+    --fonte-equipe: "Inter", sans-serif;
+}
+/* Fonte e cor padrão do corpo */
+body 
+{
+    font-family: var(--fonte-texto);
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    margin: 0;
+    padding: 0;
+}
+/* Cabeçalhos e títulos */
+h1, h2, h3, h4 
+{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-secundaria);
+}
+
+/* Logo */
+.logo a 
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--color-secundaria);
+}
+.logo-img 
+{
+    height: 40px;        /* ajuste conforme seu logo */
+    margin-right: 10px;  /* espaço entre a imagem e o texto */
+}
+
+/*cabeçalho*/
+.site-header 
+{
+    background-color: var(--color-primaria); /*cor do fundo*/
+    padding: 15px 40px; /*espaçamento*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /*sombra*/
+}
+.site-header .container 
+{
+    display: flex; /*mantem as coisas alinhadas*/
+    justify-content: space-between; /* logo à esquerda, menu à direita */
+    align-items: center; /*deixs no centro */
+}
+.grupo-direita 
+{
+    display: flex;
+    align-items: center;
+    gap: 40px; /* espaço maior entre os links e a imagem */
+}
+.nav-links 
+{
+    display: flex;
+    align-items: center;  /* alinha dentro do menu */
+    gap: 25px; /* espaço entre os links */
+}
+.nav-links a 
+{
+    color: var(--cor-secundaria);
+    text-decoration: none; /*tira o sublinhado de link*/
+    font-family: var(--fonte-texto);
+    font-size: 1.2rem;
+}
+/*só o botão serviços, do cabeçalho*/
+.btn-servicos {
+    background-color: var(--cor-secundaria); /* cor do retângulo */
+    color: var(--cor-primaria) !important; /* cor do texto dentro */
+    padding: 8px 16px;  /* espaço interno */
+    border-radius: 8px;    /* bordas arredondadas */
+    text-decoration: none;  /* sem sublinhado */
+}
+/*icone menu lateral*/
+.lateral-icon
+{
+    height: 40px;
+    width: auto;
+    display: block;
+}
