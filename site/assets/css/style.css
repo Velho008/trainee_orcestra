@@ -126,11 +126,10 @@ header {
 }
 
 /*icone menu lateral*/
-.lateral-icon {
-    height: 40px;
-    width: auto;
-    display: none;  /*pra esconder na versão pc*/
+#lateral-btn{
+    font-size: 3rem;
     cursor: pointer; /*quando colocar o mouse em cima*/
+    display: none;
 }
 
 /*menu lateral*/
@@ -206,7 +205,7 @@ header {
     display: none; /* esconde os links */
   }
 
-  .lateral-icon {
+  #lateral-btn {
     display: block; /* mostra o ícone do menu */
   }
 }
@@ -301,8 +300,12 @@ site-main {
     width: 50%;
 }
 
-#quem-somos-texto {
+#quem-somos-texto, #redes-sociais {
     scroll-margin-top: 7rem;
+}
+
+#equipe{
+    scroll-margin-top: 3rem;
 }
 
 /*footer*/
@@ -410,6 +413,10 @@ footer{
   text-align: center;
 }
 
+.team-section h2{
+    padding-bottom: 4rem;
+}
+
 .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -420,7 +427,7 @@ footer{
 }
 
 .team-member {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 15px;
   width: 250px;
@@ -516,6 +523,19 @@ footer{
   font-size: 1.5rem;
   color: #ffffff;
   margin: 0;
+}
+
+.social-card:hover {
+    transform: scale(1.1);
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.social-card i{
+    font-size: 8rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 /*telefone*/
 @media (max-width: 600px) {
