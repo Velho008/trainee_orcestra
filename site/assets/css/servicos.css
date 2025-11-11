@@ -1,0 +1,187 @@
+/* first section servicos */
+
+.container-first-section-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-first-section-servicos .textos-servicos {
+    padding: 3rem;
+    text-align: center;
+    width: 90%;
+}
+
+.container-first-section-servicos .textos-servicos p {
+    color: white;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.servicos-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.cards {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 5);
+}
+
+.cards p {
+    font-size: 1.25rem;
+}
+
+.cards img {
+    margin: 2rem 0;
+    max-height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.container-second-section-servicos h2 {
+    text-align: center;
+    padding: 9rem 0 5rem 0;
+}
+
+
+.textos-second-section {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    gap: 2rem;
+}
+
+/* 3. Estilo da Barra de Rolagem (Webkit - Chrome, Safari, Edge) */
+.textos-second-section::-webkit-scrollbar {
+    height: 0.4rem;
+}
+
+.textos-second-section::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+}
+
+.textos-second-section::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.cards-usuarios {
+    flex: 0 0 18rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+}
+
+.cards-usuarios p:first-child {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.cards-usuarios p:last-child {
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-align: right;
+    margin-top: 10px;
+}
+
+.third-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-formulario {
+    padding: 30px 40px;
+    width: 70%;
+}
+
+.container-formulario h2 {
+    margin-top: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+    /* Cor do placeholder */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.container-formulario button {
+    font-family: var(--fonte-texto);
+    padding: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.container-formulario button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
