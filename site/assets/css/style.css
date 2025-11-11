@@ -125,12 +125,65 @@ header {
 .lateral-icon {
     height: 40px;
     width: auto;
-    display: none;
+    display: none;  /*pra esconder na versão pc*/
+    cursor: pointer; /*quando colocar o mouse em cima*/
 }
 
+/*menu lateral*/
 #side-menu {
-    display: none;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--cor-secundaria);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 20px 20px;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.4);
+  z-index: 1000;
 }
+#side-menu a{
+    font-family: var(--fonte-texto);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+#side-menu a:hover{
+    scale: 1.17;
+    transition: 0.5s;
+}
+
+#side-menu.open {
+  right: 0;
+}
+/*botao de fechar o menu lateral*/
+#close-menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: var(--cor-primaria);
+  cursor: pointer;
+}
+
+/*muda o cabeçalho de acordo com o dispositivo/resolução da tela*/
+@media (max-width: 900px) { /*tablet / telefone*/
+  .nav-links {
+    display: none; /* esconde os links */
+  }
+
+  .lateral-icon {
+    display: block; /* mostra o ícone do menu */
+  }
+}
+
 
 
 /* First section - banner principal */
