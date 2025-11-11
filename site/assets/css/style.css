@@ -378,3 +378,77 @@ footer{
     text-align: center;
   }
 }
+
+/*parte da equipe*/
+.team-section {
+  background-color: var(--cor-primaria); /* fundo escuro */
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* espaço entre linhas */
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.team-member {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* FIXAR ALTURA PADRÃO */
+  height: 291px; 
+  box-sizing: border-box;
+}
+
+.photo-wrapper {
+  width: 120px;       /* tamanho fixo da foto */
+  height: 120px;      /* tamanho fixo da foto */
+  border-radius: 50%; /* circular */
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.photo-wrapper img {
+  width: 100%;        /* preenche o círculo */
+  height: 100%;       /* preenche o círculo */
+  object-fit: cover;  /* mantém proporção sem distorcer */
+}
+
+.member-name {
+  font-family: var(--fonte-equipe); /* Inter */
+  color: var(--cor-secundaria);
+  font-size: 1.1rem; /* ligeiramente maior */
+  margin: 5px 0;
+}
+
+.member-role {
+  font-family: var(--fonte-equipe); /* Inter */
+  font-size: 0.9rem; /* menor que o nome */
+  opacity: 0.8;
+}
+
+/* Tablet: 2 colunas */
+@media (max-width: 1024px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular: 1 coluna */
+@media (max-width: 768px) {
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+}
