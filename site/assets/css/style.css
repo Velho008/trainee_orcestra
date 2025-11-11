@@ -102,6 +102,11 @@ header {
     font-size: 1.75rem;
 }
 
+.nav-links a:hover{
+    scale: 1.17;
+    transition: 0.5s;
+}
+
 /*só o botão serviços, do cabeçalho*/
 .btn-servicos {
     background-color: var(--cor-secundaria);
@@ -172,10 +177,12 @@ site-main {
 .informacoes {
     display: flex;
     gap: 6rem;
+    margin-top: 2rem;
 }
 
 .informacoes p {
     font-size: 28px;
+    padding: 1rem 0;
 }
 
 .informacoes span {
