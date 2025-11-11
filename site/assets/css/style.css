@@ -137,25 +137,48 @@ header {
 #side-menu {
   position: fixed;
   top: 0;
-  right: -300px;
-  width: 250px;
+  right: -350px;
+  width: 350px;
   height: 100%;
-  background-color: var(--cor-secundaria);
-  color: white;
+  background-color: var(--cor-primaria);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 80px 20px 20px;
   transition: right 0.3s ease;
   box-shadow: -2px 0 10px rgba(0,0,0,0.4);
   z-index: 1000;
 }
+#side-menu .side-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#side-menu .side-logo img{
+    width: 120px;
+    height: auto;
+}
+/* Links centralizados verticalmente */
+#side-menu .side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  width: 100%;
+  margin-top: 50px;
+}
 #side-menu a{
     font-family: var(--fonte-texto);
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     font-size: 20px;
     text-decoration: none;
     margin: 15px 0;
+}
+/* linha entre links */
+#side-menu hr {
+  width: 80%;
+  border: 0;
+  border-top: 2px solid var(--cor-secundaria);
+  margin: 0;
 }
 #side-menu a:hover{
     scale: 1.17;
@@ -172,13 +195,13 @@ header {
   right: 20px;
   background: none;
   border: none;
-  font-size: 2em;
-  color: var(--cor-primaria);
+  font-size: 4em;
+  color: var(--cor-secundaria);
   cursor: pointer;
 }
 
 /*muda o cabeçalho de acordo com o dispositivo/resolução da tela*/
-@media (max-width: 900px) { /*tablet / telefone*/
+@media (max-width: 900px) { /*tablet/telefone*/
   .nav-links {
     display: none; /* esconde os links */
   }
