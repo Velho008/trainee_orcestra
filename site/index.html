@@ -11,6 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>InovaTech</title>
+    <link rel="icon" type="image/png" href="assets/img/logo_InovaTech.png">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
 </head>
@@ -22,22 +23,11 @@
         <!-- MENU LATERAL -->
         <aside id="side-menu">
             <button id="close-menu">×</button>
-            <div class ="side-logo">
-                <img src="assets/img/logo_InovaTech.png" alt="logo_InovaTech">
-            </div>
-            <nav class="side-nav">
-                <hr>
-                <a href="#inicio">Início</a>
-                <hr>
-                <a href="#quem-somos-texto">Quem Somos</a> 
-                <hr>
-                <a href="#equipe">Equipe</a>
-                <hr>
-                <a href="#redes-sociais">Redes Sociais</a>
-                <hr>
-                <a href="servicos.html">Serviços</a>
-                <hr>
-            </nav>
+            <a href="index.html">Início</a>
+            <a href="quem-somos.html">Quem Somos</a> 
+            <a href="equipe.html">Equipe</a>
+            <a href="redes.html">Redes Sociais</a>
+            <a href="servicos.html">Serviços</a>
         </aside>
         <!-- Cabeçalho -->
         <header class="site-header">
@@ -52,18 +42,27 @@
                         <nav class="nav-links">
                             <a href="#inicio">Início</a>
                             <a href="#quem-somos-texto">Quem Somos</a>
-                            <a href="#equipe">Equipe</a>
-                            <a href="#redes-sociais">Redes Sociais</a>
+                            <a href="equipe.html">Equipe</a>
+                            <a href="redes.html">Redes Sociais</a>
                             <a href="servicos.html" class="btn-servicos">Serviços</a>
                         </nav>
-                        <!-- icone do menu lateral -->
-                        <i class="fa-solid fa-bars lateral-icon" alt="icone do menu lateral"
-                            id="lateral-btn"></i>
-                       
+                        <!-- imagem do menu lateral -->
+                        <img src="assets/img/icone_menuLateral.png" alt="icone do menu lateral" class="lateral-icon"
+                            id="lateral-btn">
                     </div>
                 </div>
         </header>
+        <!-- MENU LATERAL -->
+        <aside id="side-menu">
+            <button id="close-menu">×</button>
+            <a href="#inicio">Início</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="redes.html">Redes Sociais</a>
+            <a href="servicos.html">Serviços</a>
+        </aside>
 
+        <!--daqui pra baixo ainda não foi mexido, tudo gpt-->
         <!-- Main -->
         <main class="site-main">
             <section class="first-section" id="inicio">
@@ -102,7 +101,7 @@
             <section class="second-sectior "id="quem-somos-texto">
                 <div class="center">
                     <div class="container-second-section">
-                        <div class="textos-second-section">
+                        <div class="textos-second-section" >
                             <h2>QUEM SOMOS?</h2>
                             <p>Nós da InovaTech Soluções acreditamos que a tecnologia é um meio para transformar realidades. Somos uma equipe apaixonada por inovação e movida pelo desejo de criar soluções inteligentes, humanas e eficientes que ajudam empresas a alcançarem seu verdadeiro potencial. Trabalhamos lado a lado com nossos clientes, entendendo suas necessidades, identificando desafios e construindo experiências que fazem a diferença no dia a dia corporativo. Mais que uma empresa de tecnologia, somos parceiros de transformação, conectando estratégia, criatividade e propósito para construir um futuro mais ágil, colaborativo e inspirador.</p>
                         </div><!--textos-second-section-->
@@ -112,137 +111,14 @@
                     </div><!--container-second-section-->
                 </div><!--center-->
             </section><!--second-section-->
-            <section class="team-section" id="equipe">
-                <div class="team-section-text">
-                    <h2>CONHEÇA A NOSSA EQUIPE</h2>
-                </div>
-
-                <div class="team-container">
-                    <!-- Dominic Alves -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://github.com/domidominic0" target="_blank">
-                                <img src="assets/img/equipe/dominic.png" alt="Dominic Alves">
-                            </a>
-                        </div>
-                        <p class="member-name">Dominic Alves</p>
-                        <p class="member-role">Desenvolvedor Fullstack</p>
-                    </div>
-
-                    <!-- Fábio Alessandro -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://github.com/Fabiovieira05" target="_blank">
-                                <img src="assets/img/equipe/fabio.png" alt="Fábio Alessandro">
-                            </a>
-                        </div>
-                        <p class="member-name">Fábio Alessandro</p>
-                        <p class="member-role">Desenvolvedor Fullstack</p>
-                    </div>
-
-                    <!-- Gabriel Velho -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://github.com/Velho008" target="_blank">
-                                <img src="assets/img/equipe/velho.png" alt="Gabriel Velho">
-                            </a>
-                        </div>
-                        <p class="member-name">Gabriel Velho</p>
-                        <p class="member-role">Desenvolvedor Fullstack</p>
-                    </div>
-                    <!-- Letícia Vitória -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://github.com/leticiavitoriagomes" target="_blank">
-                                <img src="assets/img/equipe/leticia.png" alt="Letícia Vitória">
-                            </a>
-                        </div>
-                        <p class="member-name">Letícia Vitória</p>
-                        <p class="member-role">Desenvolvedor Fullstack</p>
-                    </div>
-
-                    <!-- Nicole Jovita -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://github.com/nicolejovita" target="_blank">
-                                <img src="assets/img/equipe/nicole.png" alt="Nicole Jovita">
-                            </a>
-                        </div>
-                        <p class="member-name">Nicole Jovita</p>
-                        <p class="member-role">Desenvolvedor Fullstack</p>
-                    </div>
-
-                    <!-- Orc Estra -->
-                    <div class="team-member">
-                        <div class="photo-wrapper">
-                            <a href="https://www.instagram.com/orcgamificacao/" target="_blank">
-                                <img src="assets/img/equipe/orc.png" alt="Orc Estra">
-                            </a>
-                        </div>
-                        <p class="member-name">Orc Estra</p>
-                        <p class="member-role">Carrasco</p>
-                    </div>
-                </div>
-            </section>
-            <section class="redes-section" id="redes-sociais">
-                <div class="center">
-                    <h2>REDES SOCIAIS</h2>
-                    <div class="redes-container">
-                        <!--instagram-->
-                        <div class="social-card">
-                        <i class="fa-brands fa-instagram" alt="Instagram"></i>
-                        <p>@InovaTech_oficial</p>
-                    </div>
-                    <!--twitter-->
-                    
-                    <div class="social-card" href="google.com">
-                        <i class="fa-brands fa-x-twitter" alt="Twitter"></i>
-                        <p>@InovaTech_oficial</p>
-                    </div>
-                    <!--linkedin-->
-                    <div class="social-card">
-                            <i class="fa-brands fa-linkedin" alt="Linkedin"></i>
-                            <p>@InovaTech_oficial</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <footer>
-            <div class="footer-content">
-
-                <!-- Lado esquerdo -->
-                <div class="footer-left">
-                    <p class="footer-section-title">Contatos</p>
-                    <div class="social-icons">
-                        <i class="fa-brands fa-instagram" alt="Instagram"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-
-                    <div class="contact-info">
-                        <img src="assets/img/telefone.png" alt="Telefone" class="phone-icon">
-                        <span>+55 (61) 99999-9999</span>
-                    </div>
-                </div>
-
-                <!-- Lado direito -->
-                <div class="footer-right">
-                    <p class="footer-section-title">Informações</p>
-                    <a href="#inicio">Início</a>
-                    <a href="#quem-somos-texto">Quem Somos</a>
-                    <a href="#equipe">Equipe</a>
-                    <a href="servicos.html">Serviços</a>
-                </div>
-            </div>
-
-            <!-- Texto centralizado embaixo -->
-            <div class="footer-bottom">
-                <p>Este é um projeto desenvolvido como parte do Programa de Processo Trainee da Orc'estra.</p>
-            </div>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>© <span id="year"></span> Meu Projeto — Todos os direitos reservados</p>
         </footer>
     </div>
+    </div><!--center-->
 
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/ec4ddeaf59.js" crossorigin="anonymous"></script><!-- Font Awesome -->
