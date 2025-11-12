@@ -546,9 +546,8 @@ footer{
     gap: 40px;
   }
 
-  .social-card img {
-    width: 80px;
-    height: 80px;
+  .social-card i {
+    font-size:  5rem; 
   }
 
   .social-card p {
@@ -562,13 +561,12 @@ footer{
     flex-direction: row ;
     justify-content: center ;
     align-items: center ;
-    gap: 60px ;
+    gap: 30px ;
     flex-wrap: nowrap ;
   }
 
-  .social-card img {
-    width: 90px;
-    height: 90px;
+  .social-card i {
+    font-size: 6rem;
   }
 
   .social-card p {
