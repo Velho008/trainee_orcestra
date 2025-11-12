@@ -602,3 +602,22 @@ footer{
     width: 90%; 
   }
 }
+
+/*raiozinhos no meio da pagina*/
+.decor {
+  position: absolute;
+  top: 100px; /* ajusta para ficar logo abaixo do título */
+  width: 250px; /* tamanho da imagem */
+  height: auto;
+  opacity: 0.15; /* leve transparência */
+  pointer-events: none; /* não interfere nos cliques */
+  z-index: -1; /* atrás do conteúdo */
+}
+
+.decor-left {
+  left: 0;
+}
+
+.decor-right {
+  right: 0;
+}
