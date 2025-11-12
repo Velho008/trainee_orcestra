@@ -114,7 +114,7 @@
     margin-top: 10px;
 }
 
-.third-section{
+.fourth-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +185,32 @@
 .container-formulario button:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+.container-third-section{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-third-section .parceiros-logo{
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.container-third-section .titulo-third-section h2{
+    margin-bottom: 3rem;
+}
+
+
+.container-third-section .cards-parceiros img{
+    width: 250px;
+    height: 250px;
 }
 
 @media (min-width: 1024px) {
