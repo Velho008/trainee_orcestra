@@ -147,8 +147,7 @@
         <section class="third-section">
             <div class="container-formulario">
                     <h2>CONVERSE COM A GENTE!</h2>
-                    <form action="" method="POST">
-
+                    <form id="contato-form">
                         <div class="form-group">
                             <label for="nome">Nome Completo</label>
                             <input type="text" id="nome" name="nome" required placeholder="Ex: Orcestro Pereira da Silva">
@@ -170,8 +169,9 @@
                         </div>
 
                         <button type="submit">Enviar Mensagem</button>
-
                     </form>
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                    <script src="assets/js/script.js"></script>
             </div>
         </section><!--third-section-->
     </main><!--pagina-principal-servicos-->
