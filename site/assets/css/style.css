@@ -342,10 +342,11 @@ footer{
   gap: 10px;
 }
 
-.social-icons img {
+.social-icons i {
   width: 28px;
   height: 28px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .contact-info {
@@ -484,6 +485,10 @@ footer{
 }
 
 /*redes sociais*/
+.social-card a {
+  color: inherit; /* impede a cor azul padrão dos links */
+  text-decoration: none; /* remove sublinhado */
+}
 .redes-section{
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
