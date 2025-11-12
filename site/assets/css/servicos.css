@@ -37,7 +37,7 @@
     align-items: center;
     text-align: center;
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
 }
 
 .cards p {
@@ -185,4 +185,11 @@
 .container-formulario button:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        width: calc(100% / 5);
+        max-width: none;
+    }
 }
