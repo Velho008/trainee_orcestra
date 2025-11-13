@@ -199,128 +199,118 @@ header {
   cursor: pointer;
 }
 
-/*muda o cabeçalho de acordo com o dispositivo/resolução da tela*/
-@media (max-width: 1085px) { /*tablet/telefone*/
-  .nav-links {
-    display: none; /* esconde os links */
-  }
-
-  #lateral-btn {
-    display: block; /* mostra o ícone do menu */
-  }
-}
 
 
 
 /* First section - banner principal */
 site-main {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
 }
 
 .container-first-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-    gap: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .container-first-section .textos-principais {
-    max-width: 644px;
+  max-width: 644px;
 }
 
 .container-first-section .imagem {
-    width: 45%;
+  width: 40vw;
 }
 
 .container-first-section .textos-principais h1 {
-    font-size: 4rem;
-    margin: 0;
-    padding-bottom: 1rem;
+  font-size: 4rem;
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 .container-first-section .textos-principais p {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
 }
 
 .container-first-section .imagem img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .informacoes {
-    display: flex;
-    gap: 6rem;
-    margin-top: 2rem;
+  display: flex;
+  gap: 6rem;
+  margin-top: 2rem;
 }
 
 .informacoes p {
-    font-size: 28px;
-    padding: 1rem 0;
+  font-size: 28px;
+  padding: 1rem 0;
 }
 
 .informacoes span {
-    color: white;
+  color: white;
 }
 
 /* second section - sobre nós */
 .container-second-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .container-second-section .textos-second-section{
-    text-align: center;
-    width: 90%;
+  text-align: center;
+  width: 90%;
 }
 .container-second-section .textos-second-section h2{
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 .container-second-section .textos-second-section p{
-    font-size: 2rem;
-    text-align: center;
-    color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
 }
 
 .container-second-section .imagem-second-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .container-second-section .imagem-second-section img{
-    width: 50%;
+  width: 50%;
 }
 
 #quem-somos-texto, #redes-sociais {
-    scroll-margin-top: 7rem;
+  scroll-margin-top: 7rem;
 }
 
 #equipe{
-    scroll-margin-top: 3rem;
+  scroll-margin-top: 3rem;
 }
 
 /*footer*/
 footer{
-    background-color: var(--cor-primaria);
-    color: white;
-    padding: 40px 60px;
-    font-family: var(--fonte-texto);
-    border-top: 5px solid var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 40px 60px;
+  font-family: var(--fonte-texto);
+  border-top: 5px solid var(--cor-secundaria);
 }
 .footer-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; /*aqui é pra funfar no mobile*/
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /*aqui é pra funfar no mobile*/
 }
 
 .footer-section-title {
@@ -391,34 +381,20 @@ footer{
   font-size: 0.9rem;
   opacity: 0.8;
 }
-/*arruma o footer pra telefone*/
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;      /* empilha os dois blocos */
-    align-items: center;         /* centraliza horizontalmente */
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-right {
-    align-items: center;         /* centraliza os itens de cada bloco */
-    text-align: center;
-  }
-}
 
 /*parte da equipe*/
-.team-section {
+.equipe-section {
   background-color: var(--cor-primaria); /* fundo escuro */
   padding: 60px 20px;
   color: white;
   text-align: center;
 }
 
-.team-section h2{
+.equipe-section h2{
     padding-bottom: 4rem;
 }
 
-.team-container {
+.equipe-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px; /* espaço entre linhas */
@@ -427,17 +403,17 @@ footer{
   justify-items: center;
 }
 
-.team-member {
+.equipe-member {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 15px;
   width: 250px;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
   /* FIXAR ALTURA PADRÃO */
   height: 291px; 
   box-sizing: border-box;
@@ -470,19 +446,6 @@ footer{
   opacity: 0.8;
 }
 
-/* Tablet: 2 colunas */
-@media (max-width: 1024px) {
-  .team-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Celular: 1 coluna */
-@media (max-width: 768px) {
-  .team-container {
-    grid-template-columns: 1fr;
-  }
-}
 
 /*redes sociais*/
 .social-card a {
@@ -531,16 +494,16 @@ footer{
 }
 
 .social-card:hover {
-    transform: scale(1.1);
-    color: var(--cor-secundaria);
-    cursor: pointer;
-    transition: 0.7s;
+  transform: scale(1.1);
+  color: var(--cor-secundaria);
+  cursor: pointer;
+  transition: 0.7s;
 }
 
 .social-card i{
-    font-size: 8rem;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  font-size: 8rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 /*telefone*/
 @media (max-width: 600px) {
@@ -550,11 +513,11 @@ footer{
     align-items: center !important;
     gap: 40px;
   }
-
+  
   .social-card i {
     font-size:  5rem; 
   }
-
+  
   .social-card p {
     font-size: 1.2rem;
   }
@@ -569,40 +532,82 @@ footer{
     gap: 30px ;
     flex-wrap: nowrap ;
   }
-
+  
+  
   .social-card i {
     font-size: 6rem;
   }
-
+  
   .social-card p {
     font-size: 1.3rem;
   }
 }
-
-@media (max-width: 768px) {
-  .container-first-section .textos-principais h1 {
-    font-size: 2.5rem; 
+/*muda o cabeçalho de acordo com o dispositivo/resolução da tela*/
+@media (max-width: 1085px) { /*tablet/telefone*/
+  .nav-links {
+    display: none; /* esconde os links */
   }
 
+  #lateral-btn {
+    display: block; /* mostra o ícone do menu */
+  }
+  .center{
+    margin: 0 24px;
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 1286px){
+  .textos-principais{
+    width: 50%;
+  }
+  .container-first-section .textos-principais h1 {
+    font-size: 3rem; 
+  }
   .container-first-section .textos-principais p {
     font-size: 1.5rem; 
   }
+}
 
+@media (max-width: 768px) {
+
+  .container-first-section .textos-principais{
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;      /* empilha os dois blocos */
+    align-items: center;         /* centraliza horizontalmente */
+    text-align: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    align-items: center;         /* centraliza os itens de cada bloco */
+    text-align: center;
+  }
+  .container-first-section .textos-principais h1 {
+    font-size: 2.5rem; 
+  }
+  
+  .container-first-section .textos-principais p {
+    font-size: 1.5rem; 
+  }
+  
   .informacoes p {
     font-size: 1.5rem; 
   }
-
+  
   .informacoes {
     flex-direction: column; 
     gap: 1rem; 
     align-items: center; 
   }
-
+  
   .container-first-section .imagem {
     width: 90%; 
     margin: 0 auto; 
   }
-
+  
   .container-second-section .imagem-second-section img {
     width: 90%; 
   }
@@ -625,4 +630,20 @@ footer{
 
 .decor-right {
   right: 0;
+/* Tablet: 2 colunas */
+@media (max-width: 1024px) {
+  .equipe-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular: 1 coluna */
+@media (max-width: 768px) {
+  .equipe-container {
+    grid-template-columns: 1fr;
+  }
+
+  .equipe-container .equipe-member{
+    width: 70%;
+  }
 }
