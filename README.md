@@ -9,7 +9,8 @@ Teve como objetivo criar uma landing page moderna, funcional e totalmente respon
 - **Múltiplas Páginas:** O projeto inclui páginas de Home (index.html) e Serviços (servicos.html), com seções de Equipe, Parceiros e Redes Sociais.
 
 - **Menu Interativo:** Menu funcional em JavaScript para dispositivos móveis.
-- 
+  
+- **Formulário de Contato Funcional:** O formulário na página de Serviços usa EmailJS para enviar as mensagens diretamente para um e-mail.
 
 ### Tecnologias utilizadas
 - **HTML:** Para a estruturação e semântica do conteúdo.
@@ -17,8 +18,6 @@ Teve como objetivo criar uma landing page moderna, funcional e totalmente respon
 - **CSS:** Para estilização, layout e responsividade.
 
 - **JavaScript:** Para a manipulação do DOM e interatividade (ex: abrir/fechar o menu lateral).
-
-- **Formulário de Contato Funcional:** O formulário na página de Serviços usa EmailJS para enviar as mensagens diretamente para um e-mail.
 
 - **Git & GitHub:** Para controle de versão, gerenciamento de branches e trabalho em equipe.
 
